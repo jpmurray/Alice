@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbd067e61fdc9bb73843a70c6b6debc2",
+    "content-hash": "92dfe9f79ae1ca3997c647fbbd0f0efb",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1014,30 +1014,38 @@
             "time": "2020-09-30T07:37:11+00:00"
         },
         {
-            "name": "laracademy/interactive-make",
-            "version": "1.6",
+            "name": "itsgoingd/clockwork",
+            "version": "v5.0.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laracademy/interactive-make.git",
-                "reference": "39eb835386d01314273a6d251c9ba8a69abc6172"
+                "url": "https://github.com/itsgoingd/clockwork.git",
+                "reference": "1de3f9f9fc22217aa024f79ecbdf0fde418fc0a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laracademy/interactive-make/zipball/39eb835386d01314273a6d251c9ba8a69abc6172",
-                "reference": "39eb835386d01314273a6d251c9ba8a69abc6172",
+                "url": "https://api.github.com/repos/itsgoingd/clockwork/zipball/1de3f9f9fc22217aa024f79ecbdf0fde418fc0a1",
+                "reference": "1de3f9f9fc22217aa024f79ecbdf0fde418fc0a1",
                 "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6",
+                "psr/log": "1.*"
             },
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Laracademy\\Commands\\MakeServiceProvider"
-                    ]
+                        "Clockwork\\Support\\Laravel\\ClockworkServiceProvider"
+                    ],
+                    "aliases": {
+                        "Clockwork": "Clockwork\\Support\\Laravel\\Facade"
+                    }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Laracademy\\Commands\\": "src/"
+                    "Clockwork\\": "Clockwork/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1046,16 +1054,33 @@
             ],
             "authors": [
                 {
-                    "name": "Michael McMullen",
-                    "email": "packages@laracademy.co"
+                    "name": "itsgoingd",
+                    "email": "itsgoingd@luzer.sk",
+                    "homepage": "https://twitter.com/itsgoingd"
                 }
             ],
-            "description": "Interactive make CLI replacement for Laravel",
+            "description": "php dev tools in your browser",
+            "homepage": "https://underground.works/clockwork",
+            "keywords": [
+                "Devtools",
+                "debugging",
+                "laravel",
+                "logging",
+                "lumen",
+                "profiling",
+                "slim"
+            ],
             "support": {
-                "issues": "https://github.com/laracademy/interactive-make/issues",
-                "source": "https://github.com/laracademy/interactive-make/tree/1.6"
+                "issues": "https://github.com/itsgoingd/clockwork/issues",
+                "source": "https://github.com/itsgoingd/clockwork/tree/v5.0.6"
             },
-            "time": "2020-05-08T17:03:47+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/itsgoingd",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-12-27T00:18:25+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5763,6 +5788,50 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laracademy/interactive-make",
+            "version": "1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laracademy/interactive-make.git",
+                "reference": "39eb835386d01314273a6d251c9ba8a69abc6172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laracademy/interactive-make/zipball/39eb835386d01314273a6d251c9ba8a69abc6172",
+                "reference": "39eb835386d01314273a6d251c9ba8a69abc6172",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laracademy\\Commands\\MakeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laracademy\\Commands\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael McMullen",
+                    "email": "packages@laracademy.co"
+                }
+            ],
+            "description": "Interactive make CLI replacement for Laravel",
+            "support": {
+                "issues": "https://github.com/laracademy/interactive-make/issues",
+                "source": "https://github.com/laracademy/interactive-make/tree/1.6"
+            },
+            "time": "2020-05-08T17:03:47+00:00"
         },
         {
             "name": "laravel/sail",

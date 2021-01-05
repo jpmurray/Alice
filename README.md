@@ -8,6 +8,7 @@ This is containing my usual setup for a new Laravel project.
 -   Backblaze B2 as a filesystem adapter (bringyourownideas/laravel-backblaze).
 -   Backups configured to used the B2 adapter, and to run tasks at night _when in production env_ (spatie/laravel-backup).
 -   Helper to monitor what goes under the hood _when in local env_ (laravel/telescope).
+-   Another helper to monitor under the hood _when debug is enabled_ (itsgoingd/clockwork).
 
 ## What it does not include, but might want to
 
