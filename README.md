@@ -1,6 +1,6 @@
-# Boiletplate
+# Alice
 
-This is containing my usual setup for a new Laravel project.
+Alice is the beggining of the story. Thus, with Alice, I'm starting new Laravel projects, this is my usual boilerplate.
 
 ## What does it include
 
