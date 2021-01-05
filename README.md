@@ -6,7 +6,8 @@ This is containing my usual setup for a new Laravel project.
 
 -   Helper for artisan make commands (laracademy/interactive-make).
 -   Backblaze B2 as a filesystem adapter (bringyourownideas/laravel-backblaze).
--   Backups configured to used the B2 adapter, and to run tasks at night _when in production_ (spatie/laravel-backup).
+-   Backups configured to used the B2 adapter, and to run tasks at night _when in production env_ (spatie/laravel-backup).
+-   Helper to monitor what goes under the hood _when in local env_ (laravel/telescope).
 
 ## What it does not include, but might want to
 
