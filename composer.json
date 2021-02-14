@@ -13,7 +13,6 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
-        "itsgoingd/clockwork": "^5.0",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "spatie/laravel-backup": "^6.14"
@@ -23,6 +22,7 @@
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^0.0.5",
         "laracademy/interactive-make": "^1.6",
+        "itsgoingd/clockwork": "^5.0",
         "laravel/telescope": "^4.4",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
