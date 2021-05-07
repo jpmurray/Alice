@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+if (App::environment('local')) {
+    Route::get('/autologin', function () {
+        Auth::login(\App\Models\User::first());
+
+        return redirect()->route('dashboard');
+    });
+}
