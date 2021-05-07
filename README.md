@@ -19,4 +19,4 @@ Alice is the beggining of the story. Thus, with Alice, I'm starting new Laravel 
 ## Usage
 
 -   Clone repo and delete the `.git` folder, **or** download the zip file of this repo.
--   I should explore the `composer create-project` way...
+-   Also `composer create-project jpmurray/alice whenwillmybaby [FOLDER] -s dev --remove-vcs`
