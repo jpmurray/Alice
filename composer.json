@@ -1,14 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "jpmurray/alice",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "My own starter Laravel project, nothing fancy, just my things.",
     "keywords": [
-        "framework",
+        "starter",
         "laravel"
     ],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "beyondcode/laravel-self-diagnosis": "^1.5",
         "bringyourownideas/laravel-backblaze": "^1.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -63,7 +64,8 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
         "post-create-project-cmd": [
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "@php artisan self-diagnosis"
         ]
     }
 }
