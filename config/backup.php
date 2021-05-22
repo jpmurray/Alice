@@ -102,7 +102,7 @@ return [
             /*
              * The filename prefix used for the backup zip file.
              */
-            'filename_prefix' => env('APP_ENV') . "_",
+            'filename_prefix' => env('APP_ENV').'_',
 
             /*
              * The disk names on which the backups will be stored.
@@ -128,12 +128,12 @@ return [
     'notifications' => [
 
         'notifications' => [
-            \Spatie\Backup\Notifications\Notifications\BackupHasFailed::class => ['mail'],
-            \Spatie\Backup\Notifications\Notifications\UnhealthyBackupWasFound::class => ['mail'],
-            \Spatie\Backup\Notifications\Notifications\CleanupHasFailed::class => ['mail'],
-            \Spatie\Backup\Notifications\Notifications\BackupWasSuccessful::class => ['mail'],
-            \Spatie\Backup\Notifications\Notifications\HealthyBackupWasFound::class => ['mail'],
-            \Spatie\Backup\Notifications\Notifications\CleanupWasSuccessful::class => ['mail'],
+            \Spatie\Backup\Notifications\Notifications\BackupHasFailed::class => ['discord'],
+            \Spatie\Backup\Notifications\Notifications\UnhealthyBackupWasFound::class => ['discord'],
+            \Spatie\Backup\Notifications\Notifications\CleanupHasFailed::class => ['discord'],
+            \Spatie\Backup\Notifications\Notifications\BackupWasSuccessful::class => ['discord'],
+            \Spatie\Backup\Notifications\Notifications\HealthyBackupWasFound::class => ['discord'],
+            \Spatie\Backup\Notifications\Notifications\CleanupWasSuccessful::class => ['discord'],
         ],
 
         /*
@@ -163,6 +163,14 @@ return [
 
             'icon' => null,
 
+        ],
+
+        'discord' => [
+            'webhook_url' => env('DISCORD_BACKUP_WEBHOOK'),
+
+            'username' => null,
+
+            'avatar_url' => null,
         ],
     ],
 
