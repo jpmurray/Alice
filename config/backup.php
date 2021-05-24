@@ -168,9 +168,9 @@ return [
         'discord' => [
             'webhook_url' => env('DISCORD_BACKUP_WEBHOOK'),
 
-            'username' => null,
+            'username' => 'Backups',
 
-            'avatar_url' => null,
+            'avatar_url' => 'https://cdn.discordapp.com/avatars/845715772801941514/21b5713c0151db0886aad48bec8693ba.png?size=256',
         ],
     ],
 
