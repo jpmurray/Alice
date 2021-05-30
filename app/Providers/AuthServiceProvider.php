@@ -25,6 +25,12 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        Gate::define('viewWebLogs', function ($user = null) {
+            if (config('app.env') !== 'production') {
+                return true;
+            } else {
+                return $user->id === 1;
+            }
+        });
     }
 }
